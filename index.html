@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA STORE</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        padding: 25px 15px;
+        text-align: center;
+        background: #080808;
+        border-bottom: 1px solid #333;
+    }
+    header h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    header p {
+        color: #888;
+        margin-top: 8px;
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+    .hero {
+        text-align: center;
+        padding: 45px 15px 25px;
+    }
+    .hero h2 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        color: #999;
+        font-size: 14px;
+    }
+    .products {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .product {
+        width: 100%;
+        max-width: 340px;
+        background: #1b1b1b;
+        border: 1px solid #333;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .product-image {
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #242424;
+        font-size: 100px;
+    }
+    .product-info {
+        padding: 22px;
+    }
+    .product h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .price {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .order-button {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 6px;
+        background: white;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .order-button:hover {
+        background: #ccc;
+    }
+    footer {
+        text-align: center;
+        padding: 30px 15px;
+        color: #777;
+        font-size: 12px;
+        margin-top: 30px;
+        border-top: 1px solid #333;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>NOVA STORE</h1>
+    <p>YOUR STYLE. YOUR CHOICE.</p>
+</header>
+<section class="hero">
+    <h2>Манай бараа</h2>
+    <p>Өөрийн хэв маягийг NOVA STORE-оос.</p>
+</section>
+<section class="products">
+    <div class="product">
+        <div class="product-image">
+            🧲
+        </div>
+        <div class="product-info">
+            <h3>Соронзон ээмэг</h3>
+            <p class="price">25,000₮</p>
+            <button class="order-button" onclick="orderProduct()">
+                ЗАХИАЛАХ
+            </button>
+        </div>
+    </div>
+</section>
+<footer>
+    © 2026 NOVA STORE. Бүх эрх хуулиар хамгаалагдсан.
+</footer>
+<script>
+    function orderProduct() {
+        alert(
+            "NOVA STORE\n\n" +
+            "Бараа: Соронзон ээмэг\n" +
+            "Үнэ: 25,000₮\n\n" +
+            "Захиалах бол дэлгүүрийн эзэнтэй холбогдоорой!"
+        );
+    }
+</script>
+</body>
+</html>
